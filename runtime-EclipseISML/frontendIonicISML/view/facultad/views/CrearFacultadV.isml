@@ -1,0 +1,14 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+page CrearFacultadV(FacultadE facultad) controlledBy CrearFacultadC  { 
+	Panel("Crear Facultad") {
+		Form {
+			Text("Nombre", "nuevaFacultad.nombre", 25, 3);
+			Button("Guardar")->guardar(nuevaFacultad);	   
+			Button("Cancelar")->cancelar();      
+		} 
+	}
+} 

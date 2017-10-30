@@ -1,0 +1,6 @@
+package services;
+
+service CameraService {
+	native BytesArray takePicture();
+}
+   

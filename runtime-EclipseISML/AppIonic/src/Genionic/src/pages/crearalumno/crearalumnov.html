@@ -1,0 +1,92 @@
+<ion-header>
+	 <ion-navbar color="primary">
+	    <button ion-icon menuToggle>
+	      <ion-icon name="menu"></ion-icon>
+	    </button>
+	    <ion-title>Crear Alumno</ion-title>
+	 </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<div class="list">
+	<form #form="">
+		<div class="list">
+		<ion-label class="input-label">Capturar foto</ion-label>
+			    <button ion-button (click)="getPicture()">Capturar foto</button>
+			    <div class="divPicture"><img class="imgPicture" [src]="nuevoAlumno.foto" *ngIf="nuevoAlumno.foto" /></div>
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Documento</span>
+		<ion-input 
+			type="text" 
+			name="Documento"
+			min="3"
+			max="25"
+			placeholder="Documento"
+			[(ngModel)]="nuevoAlumno.documento"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Nombres</span>
+		<ion-input 
+			type="text" 
+			name="Nombres"
+			min="3"
+			max="25"
+			placeholder="Nombres"
+			[(ngModel)]="nuevoAlumno.nombres"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Apellidos</span>
+		<ion-input 
+			type="text" 
+			name="Apellidos"
+			min="3"
+			max="25"
+			placeholder="Apellidos"
+			[(ngModel)]="nuevoAlumno.apellidos"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Dirección</span>
+		<ion-input 
+			type="text" 
+			name="Dirección"
+			min="3"
+			max="25"
+			placeholder="Dirección"
+			[(ngModel)]="nuevoAlumno.direccion"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Teléfono</span>
+		<ion-input 
+			type="text" 
+			name="Teléfono"
+			min="3"
+			max="25"
+			placeholder="Teléfono"
+			[(ngModel)]="nuevoAlumno.telefono"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<button ion-button (click)="guardar(nuevoAlumno)" >Guardar</button>
+		<button ion-button (click)="cancelar()" >Cancelar</button>
+		</div>
+	</form>
+	</div>
+</ion-content>
+	

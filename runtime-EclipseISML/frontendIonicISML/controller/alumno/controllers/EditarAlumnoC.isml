@@ -1,0 +1,22 @@
+package asignatura.controllers;   
+import entities.*; 
+import services.*;   
+import asignatura.views.*;  
+ 
+controller EditarAlumnoC {     
+	
+	has Persistence<AlumnoE> persistence;   
+    has AlumnoE editar; 
+                 
+	guardar(AlumnoE editar){
+		persistence.save(editar);    
+		show AlumnoV(null);         
+	} 
+	cancelar(){
+		show AlumnoV(null);   
+	}
+	
+	default editarAsignatura(){
+		show EditarAlumnoV(editar);        
+	}              
+} 

@@ -1,0 +1,18 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+page EditarAlumnoV (AlumnoE editar) controlledBy EditarAlumnoC  {  
+	Panel("Editar Alumno") {
+		Form {
+			Text("Documento", "editar.documento", 25, 3);
+			Text("Nombres", "editar.nombres", 25, 3);
+			Text("Apellidos", "editar.apellidos", 25, 3);
+			Text("Dirección", "editar.direccion", 25, 3);
+			Text("Teléfono", "editar.telefono", 25, 3);
+			Button("Editar")->guardar(editar);	
+			Button("Cancelar")->cancelar();     
+		} 
+	}
+} 

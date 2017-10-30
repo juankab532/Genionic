@@ -1,0 +1,23 @@
+package asignatura.controllers;   
+import entities.*; 
+import services.*;   
+import asignatura.views.*;  
+ 
+controller CrearFacultadC {     
+	
+	has Persistence<FacultadE> persistence;                
+	has FacultadE nuevaFacultad;
+
+	guardar(FacultadE facultad){ 
+		persistence.create(facultad);    
+		show FacultadV(null);         
+	} 
+	
+	cancelar(){
+		show FacultadV(null);     
+	}
+	
+	default crear(){
+		show CrearFacultadV(nuevaFacultad);        
+	}              
+} 

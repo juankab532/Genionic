@@ -1,0 +1,8 @@
+package entities;
+
+entity InscripcionE {  
+	
+	Long   		  id;
+	AlumnoE   	  alumno;
+	AsignaturaE   asignatura;
+}       

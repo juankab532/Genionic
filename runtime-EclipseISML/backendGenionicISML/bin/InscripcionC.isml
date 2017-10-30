@@ -1,0 +1,8 @@
+package services;
+
+import backend.entities.*;
+
+service Inscripcionc extends Persistence<InscripcionE>   {         
+    
+}        
+         

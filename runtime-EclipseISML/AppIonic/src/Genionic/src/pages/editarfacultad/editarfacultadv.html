@@ -1,0 +1,33 @@
+<ion-header>
+	 <ion-navbar color="primary">
+	    <button ion-icon menuToggle>
+	      <ion-icon name="menu"></ion-icon>
+	    </button>
+	    <ion-title>Editar Facultad</ion-title>
+	 </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<div class="list">
+	<form #form="">
+		<div class="list">
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Nombre</span>
+		<ion-input 
+			type="text" 
+			name="Nombre"
+			min="3"
+			max="25"
+			placeholder="Nombre"
+			[(ngModel)]="editar.nombre"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<button ion-button (click)="guardar(editar)" >Editar</button>
+		<button ion-button (click)="cancelar()" >Cancelar</button>
+		</div>
+	</form>
+	</div>
+</ion-content>
+	

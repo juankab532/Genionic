@@ -1,0 +1,94 @@
+<ion-header>
+	 <ion-navbar color="primary">
+	    <button ion-icon menuToggle>
+	      <ion-icon name="menu"></ion-icon>
+	    </button>
+	    <ion-title>Editar Asignatura</ion-title>
+	 </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<div class="list">
+	<form #form="">
+		<div class="list">
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Codigo</span>
+		<ion-input 
+			type="text" 
+			name="Codigo"
+			min="3"
+			max="8"
+			placeholder="Codigo"
+			[(ngModel)]="editar.codigo"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Nombre</span>
+		<ion-input 
+			type="text" 
+			name="Nombre"
+			min="3"
+			max="25"
+			placeholder="Nombre"
+			[(ngModel)]="editar.nombre"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Descripcion</span>
+		<ion-input 
+			type="text" 
+			name="Descripcion"
+			min="1"
+			max="25"
+			placeholder="Descripcion"
+			[(ngModel)]="editar.descripcion"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Semestre</span>
+		<ion-input 
+			type="text" 
+			name="Semestre"
+			min="1"
+			max="25"
+			placeholder="Semestre"
+			[(ngModel)]="editar.semestre"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<label class="item item-input item-floating-label">
+		<span class="input-label">Estado</span>
+		<ion-input 
+			type="text" 
+			name="Estado"
+			min="1"
+			max="25"
+			placeholder="Estado"
+			[(ngModel)]="editar.estado"
+			clearInput="true"
+			class="form-control"
+		required></ion-input>
+		</label>
+		
+		<ion-label class="input-label">Facultad</ion-label>
+		<ion-select [(ngModel)]="editar.facultad.id" name="editar.facultad.id" class="form-control" placeholder="Facultad" required> 
+			<ion-option value="">Seleccione...</ion-option>
+		    <ion-option  *ngFor="let valSel of lista"  value="{{valSel.id}}">{{valSel.nombre}}</ion-option>
+		</ion-select>
+		<button ion-button (click)="guardar(editar)" >Editar Asignatura</button>
+		<button ion-button (click)="cancelar()" >Cancelar</button>
+		</div>
+	</form>
+	</div>
+</ion-content>
+	

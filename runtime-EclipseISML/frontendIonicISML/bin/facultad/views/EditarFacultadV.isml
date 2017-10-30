@@ -1,0 +1,14 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+page EditarFacultadV(FacultadE editar) controlledBy EditarFacultadC  { 
+	Panel("Editar Facultad") {
+		Form {
+			Text("Nombre", "editar.nombre", 25, 3);
+			Button("Editar")->guardar(editar);	
+			Button("Cancelar")->cancelar();     
+		} 
+	}
+} 

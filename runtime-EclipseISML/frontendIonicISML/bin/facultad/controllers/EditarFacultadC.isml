@@ -1,0 +1,21 @@
+package asignatura.controllers;   
+import entities.*; 
+import services.*;   
+import asignatura.views.*;  
+ 
+controller EditarFacultadC {     
+	
+	has Persistence<FacultadE> persistence;   
+    has FacultadE editar;              
+	guardar(FacultadE editar){
+		persistence.save(editar);    
+		show FacultadV(null);         
+	} 
+	cancelar(){
+		show FacultadV(null);   
+	}
+	
+	default editarAsignatura(){
+		show EditarFacultadV(editar);        
+	}              
+} 

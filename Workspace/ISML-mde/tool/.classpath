@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="co.edu.javeriana.isml.generator.crud/src"/>
+	<classpathentry kind="src" path="co.edu.javeriana.isml.generator.simple/src"/>
+	<classpathentry kind="src" path="co.edu.javeriana.isml.generator.ui/src"/>
+	<classpathentry kind="src" path="co.edu.javeriana.isml.generator/src"/>
+	<classpathentry kind="src" path="co.edu.javeriana.isml.ui/src"/>
+	<classpathentry kind="src" path="co.edu.javeriana.isml.visual/src"/>
+	<classpathentry kind="src" path="co.edu.javeriana.isml/src"/>
+	<classpathentry kind="lib" path="co.edu.javeriana.isml.generator/lib/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="co.edu.javeriana.isml.generator/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="co.edu.javeriana.isml/.antlr-generator-3.2.0-patch.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,15 @@
+package co.edu.javeriana;
+import co.edu.javeriana.entities.* ;
+
+
+service DietaPersonal 
+{
+	
+	 Void selectDieta(Dieta dieta, String almuerzo){
+		if(dieta.almuerzo){
+			
+			
+		}
+		
+	}
+}

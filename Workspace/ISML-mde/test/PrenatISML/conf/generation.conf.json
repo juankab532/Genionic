@@ -1,0 +1,169 @@
+{
+	generatorSuiteConfigurations: [
+	
+		{
+		generatorClass: "co.edu.javeriana.zoe.generator.jee7.ZoeJEE7Generator",
+		active: true,
+		outputConfigurations: 
+		[
+			{
+				name: "pages",
+				outputDirectory:"../zoeTest/zoeTest-web/src/main/webapp/",
+				
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "backing.beans",
+				outputDirectory:"../zoeTest/zoeTest-web/src/main/java/",
+				
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "service.interface",
+				outputDirectory:"../zoeTest/zoeTest-ejb/src/main/java/",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "service.impl",
+				outputDirectory: "../zoeTest/zoeTest-ejb/src/main/java/",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:false,			
+				overrideExistingResources:false,
+				setDerivedProperty:false,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			}			
+		]
+	},
+
+	{
+		generatorClass: "co.edu.javeriana.isml.generator.crud.CRUDGenerator",
+		active: true,
+		onDemand: true,
+		outputConfigurations: 
+		[
+			{
+				name: "controllers",
+				outputDirectory:"controller",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:false,
+				overrideExistingResources:true,
+				setDerivedProperty:false,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "pages",
+				outputDirectory:"view",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:false,
+				overrideExistingResources:true,
+				setDerivedProperty:false,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			}
+			
+			
+		]
+	},
+	{
+		generatorClass: "co.edu.javeriana.zoe.generator.persistence.ZoePersistenceGenerator",
+		active: true,
+		outputConfigurations: 
+		[
+			{
+				name: "entities",
+				outputDirectory:"../zoeTest/zoeTest-ejb/src/main/java/",
+								
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},		
+			{
+				name: "resource.bundle",
+				outputDirectory:"../zoeTest/zoeTest-web/src/main/java/",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "service.general",
+				outputDirectory:"../zoeTest/zoeTest-ejb/src/main/java/",
+				
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+				
+				
+			},
+			{
+				name: "persistencexml",
+				outputDirectory:"../zoeTest/zoeTest-ejb/src/main/resources/META-INF/",
+				
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+				
+				
+			}			
+		]
+	}
+	]
+}

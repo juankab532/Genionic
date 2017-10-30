@@ -1,0 +1,31 @@
+package asignatura.controllers;   
+import entities.*; 
+import services.*;   
+import asignatura.views.*;  
+ 
+controller EditarAsignaturaC {     
+	
+	has Persistence<AsignaturaE> persistence;   
+	has Persistence<FacultadE> persistenceF;  
+	has Array<FacultadE> lista;   
+	                       
+	has AsignaturaE editar;
+	
+	default ionViewDidLoad(){        
+		lista = persistenceF.findAll();                                                                
+	} 
+	
+	guardar(AsignaturaE asignatura){ 
+		editar=asignatura;
+		persistence.save(asignatura);    
+		show AsignaturaV(null);         
+	} 
+	
+	cancelar(){
+		show AsignaturaV(null);   
+	}
+	
+	default editarAsignatura(){
+		show EditarAsignaturaV(editar);        
+	}              
+} 

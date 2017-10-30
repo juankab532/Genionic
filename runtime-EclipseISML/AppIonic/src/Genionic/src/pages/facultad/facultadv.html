@@ -1,0 +1,33 @@
+<ion-header>
+	 <ion-navbar color="primary">
+	    <button ion-icon menuToggle>
+	      <ion-icon name="menu"></ion-icon>
+	    </button>
+	    <ion-title>Gestionar Facultad</ion-title>
+	 </ion-navbar>
+</ion-header>
+<ion-content padding>
+	<div class="list">
+	<ion-grid>
+			<ion-row align-items-center>
+	  				    <ion-col class="colHeader"><ion-label class="input-label">Nombre</ion-label>
+	  				    </ion-col>
+	  				    <ion-col class="colHeader"><ion-label class="input-label">Editar</ion-label>
+	  				    </ion-col>
+	  				    <ion-col class="colHeader"><ion-label class="input-label">Eliminar</ion-label>
+	  				    </ion-col>
+			</ion-row>
+			<ion-row  *ngFor="let facultad of lista ">
+	
+	  						<ion-col><ion-label class="input-label">{{facultad.nombre}}</ion-label>
+	  						</ion-col>		 
+	  						<ion-col><button ion-button (click)="editar(facultad)" >Editar</button>
+	  						</ion-col>
+	  						<ion-col><button ion-button (click)="eliminar(facultad)" >Eliminar</button>
+	  						</ion-col>
+			</ion-row>
+	</ion-grid>
+	<button ion-button (click)="crear()" >Crear Facultad</button>
+	</div>
+</ion-content>
+	

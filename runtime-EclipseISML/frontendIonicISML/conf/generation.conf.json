@@ -1,0 +1,104 @@
+{
+	generatorSuiteConfigurations: [
+	
+		{               
+		generatorClass: "co.edu.javeriana.generator.genionic.GenionicGenerator",
+		active: true,
+		outputConfigurations: 
+		[
+			{
+				name: "frontend.views",
+				outputDirectory:"../AppIonic/src/Genionic/src/pages",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "frontend.controllers",
+				outputDirectory:"../AppIonic/src/Genionic/src/pages",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "frontend.entities",
+				outputDirectory:"../AppIonic/src/Genionic/src/pages",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "frontend.module",
+				outputDirectory:"../AppIonic/src/Genionic/src/pages",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "frontend.css",
+				outputDirectory:"../AppIonic/src/Genionic/src/pages",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{
+				name: "frontend.conf1",
+				outputDirectory:"../AppIonic/src/Genionic/src/app",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			},
+			{ 
+				name: "frontend.component",
+				outputDirectory:"../AppIonic/src/Genionic/src/app",
+				createOutputDirectory:true,
+				cleanUpDerivedResources:true,
+				overrideExistingResources:true,
+				setDerivedProperty:true,
+				canClearOutputDirectory:false,
+				installDslAsPrimarySource:false,
+				hideSyntheticLocalVariables:true,
+				keepLocalHistory:false,
+				useOutputPerSourceFolder:false
+			}
+		]
+		}
+		
+	]
+}

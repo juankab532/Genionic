@@ -1,0 +1,11 @@
+package backend.entities;
+
+entity AlumnoE {  
+	Long   id;
+	String documento;
+	String nombres;
+	String apellidos;
+	String direccion;
+	String telefono;
+	BytesArray foto;
+}      

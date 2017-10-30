@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/co.edu.javeriana.isml/src-gen" editDirectory="/co.edu.javeriana.isml.edit/src"
+    editorDirectory="/co.edu.javeriana.isml.editor/src" modelPluginID="co.edu.javeriana.isml"
+    forceOverwrite="true" modelName="Isml" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    editPluginID="co.edu.javeriana.isml.edit" editorPluginID="co.edu.javeriana.isml.editor"
+    runtimeVersion="2.9">
+  <foreignModel>Isml.ecore</foreignModel>
+  <genPackages prefix="Isml" basePackage="co.edu.javeriana.isml" disposableProviderFactory="true"
+      fileExtensions="isml" ecorePackage="Isml.ecore#/" publicationLocation="">
+    <genClasses ecoreClass="Isml.ecore#//Package">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Package/imports"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//InformationSystem"/>
+    <genClasses ecoreClass="Isml.ecore#//Import">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Isml.ecore#//Import/importedPackage"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Isml.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//Type"/>
+    <genClasses ecoreClass="Isml.ecore#//TypedElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Isml.ecore#//TypedElement/type"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//VariableTypeElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//VariableTypeElement/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Feature"/>
+    <genClasses ecoreClass="Isml.ecore#//Attribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Isml.ecore#//Attribute/opposite"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Attribute/constraints"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//Parameter"/>
+    <genClasses ecoreClass="Isml.ecore#//Variable"/>
+    <genClasses ecoreClass="Isml.ecore#//Resource"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//TypeSpecification">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//TypeSpecification/superTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Isml.ecore#//TypeSpecification/abstract"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//Primitive"/>
+    <genClasses ecoreClass="Isml.ecore#//Constraint"/>
+    <genClasses ecoreClass="Isml.ecore#//Function">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Function/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Isml.ecore#//Function/native"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Function/genericTypeParameters"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//Method"/>
+    <genClasses ecoreClass="Isml.ecore#//Entity"/>
+    <genClasses ecoreClass="Isml.ecore#//Actor"/>
+    <genClasses ecoreClass="Isml.ecore#//Controller"/>
+    <genClasses ecoreClass="Isml.ecore#//View">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Isml.ecore#//View/controller"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Statement"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//MethodStatement"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//CompositeViewStatement"/>
+    <genClasses ecoreClass="Isml.ecore#//For"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Iteration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Iteration/variable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Iteration/collection"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//ForView"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Reference">
+      <genTypeParameters ecoreTypeParameter="Isml.ecore#//Reference/T"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Reference/tail"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Isml.ecore#//Reference/referencedElement"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//ParameterizedReference">
+      <genTypeParameters ecoreTypeParameter="Isml.ecore#//ParameterizedReference/T"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//MethodCall"/>
+    <genClasses ecoreClass="Isml.ecore#//ActionCall"/>
+    <genClasses ecoreClass="Isml.ecore#//VariableReference"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Expression"/>
+    <genClasses ecoreClass="Isml.ecore#//If">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//If/elseBody"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//IfView"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Conditional">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Conditional/condition"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//While"/>
+    <genClasses ecoreClass="Isml.ecore#//Return">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Return/expression"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Instance"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Caller">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Caller/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//ViewInstance">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//ViewInstance/actionCall"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//StructInstance"/>
+    <genClasses ecoreClass="Isml.ecore#//Show">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//Show/expression"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Operator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Isml.ecore#//Operator/symbol"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//BinaryOperator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//BinaryOperator/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//BinaryOperator/right"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//UnaryOperator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//UnaryOperator/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//Assignment"/>
+    <genClasses ecoreClass="Isml.ecore#//Widget"/>
+    <genClasses ecoreClass="Isml.ecore#//Page"/>
+    <genClasses ecoreClass="Isml.ecore#//ResourceBundle"/>
+    <genClasses ecoreClass="Isml.ecore#//ConstraintInstance"/>
+    <genClasses ecoreClass="Isml.ecore#//Interface"/>
+    <genClasses ecoreClass="Isml.ecore#//Service"/>
+    <genClasses ecoreClass="Isml.ecore#//Action">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Isml.ecore#//Action/default"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//LiteralValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Isml.ecore#//LiteralValue/literal"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//IntValue"/>
+    <genClasses ecoreClass="Isml.ecore#//FloatValue"/>
+    <genClasses ecoreClass="Isml.ecore#//BoolValue"/>
+    <genClasses ecoreClass="Isml.ecore#//StringValue"/>
+    <genClasses ecoreClass="Isml.ecore#//NullValue"/>
+    <genClasses ecoreClass="Isml.ecore#//ResourceReference"/>
+    <genClasses ecoreClass="Isml.ecore#//GenericTypeSpecification">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//GenericTypeSpecification/superType"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//ParameterizedType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//ParameterizedType/typeParameters"/>
+    </genClasses>
+    <genClasses ecoreClass="Isml.ecore#//Enum"/>
+    <genClasses ecoreClass="Isml.ecore#//EnumItem"/>
+    <genClasses ecoreClass="Isml.ecore#//ResourceAssignment"/>
+    <genClasses ecoreClass="Isml.ecore#//DTO"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//Struct"/>
+    <genClasses ecoreClass="Isml.ecore#//NamedViewBlock"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//CompositeMethodStatement"/>
+    <genClasses image="false" ecoreClass="Isml.ecore#//CompositeElement">
+      <genTypeParameters ecoreTypeParameter="Isml.ecore#//CompositeElement/T"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Isml.ecore#//CompositeElement/body"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Isml.ecore#//CompositeElement/hasBody"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Isml.ecore#//ViewStatement"/>
+    <genClasses ecoreClass="Isml.ecore#//Element"/>
+    <genClasses ecoreClass="Isml.ecore#//CompositeTypeSpecification">
+      <genTypeParameters ecoreTypeParameter="Isml.ecore#//CompositeTypeSpecification/T"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

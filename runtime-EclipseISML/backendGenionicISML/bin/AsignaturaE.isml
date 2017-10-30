@@ -1,0 +1,11 @@
+package backend.entities;
+
+entity AsignaturaE { 
+	Long  id;
+	String codigo;      
+	String nombre;
+	String descripcion;    
+	Long   semestre;   
+	String estado;     
+	FacultadE facultad;          
+}              

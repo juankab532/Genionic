@@ -1,0 +1,27 @@
+package asignatura.controllers; 
+import entities.*; 
+import services.*;   
+import asignatura.views.*;  
+ 
+controller FacultadC {  
+	
+	has Persistence<FacultadE> persistence;                              
+	has Array<FacultadE> lista;         
+	has Any imagen; 
+		    
+	default ionViewDidLoad(){       
+		lista = persistence.findAll();                                                                
+	}                  
+   
+	editar(FacultadE editar){   
+		show EditarFacultadV(editar);           
+	}   
+	eliminar(FacultadE eliminar){    
+		persistence.remove(eliminar);  
+		show FacultadV(lista);                   
+	}  
+	crear(){ 
+		FacultadE nuevaFacultad =new FacultadE;
+		show CrearFacultadV(nuevaFacultad);        
+	}               
+}   

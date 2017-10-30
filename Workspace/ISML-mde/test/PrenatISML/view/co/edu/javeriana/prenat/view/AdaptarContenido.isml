@@ -1,0 +1,10 @@
+package co.edu.javeriana ;
+import co.edu.javeriana.prenat.resource.* ;
+import co.edu.javeriana.entities.* ;
+
+page AdaptarContenido() controlledBy AdaptarContenidoController {
+	Form {
+		Media("http://www.youtube.com/v/KZnUr8lcqjo","420","315");
+		
+	}
+}

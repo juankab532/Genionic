@@ -1,0 +1,19 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+page EditarAsignaturaV(AsignaturaE editar) controlledBy EditarAsignaturaC  { 
+	Panel("Editar Asignatura") {
+		Form {
+			Text("Codigo","editar.codigo", 8, 3);
+			Text("Nombre", "editar.nombre", 25, 3);
+			Text("Descripcion", "editar.descripcion", 25, 1);
+			Text("Semestre", "editar.semestre", 25, 1);
+			Text("Estado", "editar.estado", 25, 1);
+			Select("Facultad","editar.facultad.id","lista", "id","nombre","editar.facultad.id"); 
+			Button("Editar Asignatura")->guardar(editar);	
+			Button("Cancelar")->cancelar();      
+		} 
+	}
+} 
