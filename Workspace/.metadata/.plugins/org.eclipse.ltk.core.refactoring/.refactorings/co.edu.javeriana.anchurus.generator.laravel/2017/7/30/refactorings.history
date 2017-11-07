@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;UtilsAnchurus.xtend&apos; to &apos;co.edu.javeriana.genionic.generator.frontend/xtend-gen/co.edu.javeriana.genionic.generator.fontend.templates&apos;&#x0A;- Original project: &apos;co.edu.javeriana.anchurus.generator.laravel&apos;&#x0A;- Destination element: &apos;co.edu.javeriana.genionic.generator.frontend/xtend-gen/co.edu.javeriana.genionic.generator.fontend.templates&apos;&#x0A;- Original element: &apos;UtilsAnchurus.xtend&apos;" description="Copy file" destination="=co.edu.javeriana.genionic.generator.frontend/xtend-gen&lt;co.edu.javeriana.genionic.generator.fontend.templates" element1="src/co/edu/javeriana/anchurus/generator/laravel/utils/UtilsAnchurus.xtend" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1500317434366" units="0" version="1.0"/>
+</session>

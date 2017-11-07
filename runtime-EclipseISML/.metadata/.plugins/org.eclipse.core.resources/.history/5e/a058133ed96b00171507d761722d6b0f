@@ -1,0 +1,22 @@
+package co.edu.javeriana.generator.genionic
+
+import co.edu.javeriana.generator.genionic.generators.PageGenerator
+import co.edu.javeriana.isml.generator.common.GeneratorSuite
+import co.edu.javeriana.isml.generator.common.OutputConfiguration
+
+/**
+ * Generates code from your model files on save.
+ * 
+ * see http://www.eclipse.org/Xtext/documentation.html#TutorialCodeGeneration
+ */
+class GenionicGenerator extends GeneratorSuite {
+	@OutputConfiguration
+	public static final String PAGES = "pages";
+	
+	override getGenerators() {
+		#{
+			new PageGenerator
+		}
+	}
+
+}

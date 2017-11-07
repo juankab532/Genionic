@@ -1,0 +1,38 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+ 
+page AsignaturaV(Collection<AsignaturaE> lista, Any foto) controlledBy AsignaturaC  { 
+	ExtendedMenu("Gestionar Asignatura","person");  
+	Panel("GESTIONAR ASIGNATURAS") {
+		//Cam("Capturar Foto") -> getPicture(); 
+		  
+		DataTable("Collection<Asignatura>", null) { 
+			header : { 
+				Label("Codigo");
+	            Label("Nombre");  
+	            Label("Descripcion");
+	            Label("Semestre"); 
+	            Label("Estado"); 
+	            Label("Facultad");   
+	            Label("Editar");
+	            Label("Eliminar"); 
+	        }
+	        body :
+	        	for(AsignaturaE asignatura in lista) {    
+	        		Label("{{asignatura.codigo}}");
+	               	Label("{{asignatura.nombre}}");
+	               	Label("{{asignatura.descripcion}}");
+	               	Label("{{asignatura.semestre}}");
+	               	Label("{{asignatura.estado}}");
+	               	Label("{{asignatura.facultad.nombre}}");
+	                Button("Editar")->editar(asignatura) ;
+	                Button("Eliminar")->eliminar(asignatura);    
+	            } 
+		} 
+		Button("Crear Asignatura")->crear(); 
+	}
+	
+} 

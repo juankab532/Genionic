@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;generation.conf.json&apos; to &apos;conf&apos;&#x0A;- Original project: &apos;GestionEstudiantesISML&apos;&#x0A;- Destination element: &apos;conf&apos;&#x0A;- Original element: &apos;generation.conf.json&apos;" description="Copy file" element1="conf/generation.conf.json" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1500319783273" target="/IonicISML/conf" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,6 @@
+package asignatura.entities;
+
+entity AsignaturaE {  
+	Long   id;
+	String nombre;
+}    

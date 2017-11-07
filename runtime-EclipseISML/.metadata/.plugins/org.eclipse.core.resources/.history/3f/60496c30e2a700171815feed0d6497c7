@@ -1,0 +1,27 @@
+package inscripcion.views; 
+
+import entities.*;   
+import inscripcion.controllers.*;  
+ 
+ 
+page InscripcionV(AlumnoE alumno) controlledBy InscripcionC  { 
+ 
+	Panel("Asinaturas Inscritas") {
+		  
+		DataTable("Collection<InscripcionE>", null) { 
+			header : { 
+	            Label("Nombre");  
+	            Label("Retirar"); 
+	        }
+	        body :
+	        	for(InscripcionE inscripcion in lista) {     
+	               	Label("{{inscripcion.asignatura.nombre}}"); 
+	                Button("Retirar")->retirar(inscripcion);      
+	            } 
+		} 
+		
+	}
+			Select("Asignaturas","seleccionada.asignatura.id","asignaturas", "id","nombre","");  
+		Button("Inscribir Asignatura")->inscribir(); 
+	
+}  

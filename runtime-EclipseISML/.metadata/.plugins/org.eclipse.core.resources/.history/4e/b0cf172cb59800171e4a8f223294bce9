@@ -1,0 +1,86 @@
+package common.services;
+
+import java.util.*;
+
+import org.jboss.resteasy.annotations.Query;
+
+public interface PersistenceImpl<T> {
+	/** 
+	 * Deletes an object from the database.
+	 * @param obj The object to delete
+	 */
+	public void remove(T obj);
+	/** 
+	 * Deletes an object from the database.
+	 * @param id The id of the object to delete
+	 */
+	public void remove(Integer id);
+	/** 
+	 * Creates a new object in the database.
+	 * @param obj The object to create
+	 */
+	public  void create(T obj);
+	/**
+	 * Returns all the objects of type T in the database.
+	 */
+	public  ArrayList< T > findAll();
+	/**
+	 * Returns all the objects of type T in the database, except the given collection.
+	 * @param elementsToExclude The instances to not retrieve from the database
+	 */
+	public  ArrayList < T > findAllExcept(Collection < T > elementsToExclude);
+
+	/**
+	 * Determines if an object has already been saved in the database or not.
+	 */
+	public  Boolean isPersistent(T obj);
+
+	/** Finds an object by its id.
+	 * @param id The id of the object to find
+	 */
+	public  T find(Integer id);
+
+	/** 
+	 * Saves an already persistent object in the database.
+	 * @param obj The object to save
+	 */
+	public  void save(T obj);
+
+	// TODO Document
+	public  ArrayList < T > findRange(Integer rangeSize, Integer from);
+
+	/**
+	 * Returns the number of objects of type T in the database.
+	 */
+	public   Integer count();
+
+	/**
+	 * Adds an object to a collection that belongs to another object and saves the result in the database.
+	 * @param container The object that contains the collection
+	 * @param collection The collection that is owned by container
+	 * @param obj The object to add to collection
+	 */
+	public  void addToCollection(String container, Collection < T > collection, T obj);
+
+	/**
+	 * Removes an object from a collection that belongs to another object and saves the result in the database.
+	 * @param container The object that contains the collection
+	 * @param collection The collection that is owned by container
+	 * @param obj The object to add to collection
+	 */
+	public  void removeFromCollection(String container, Collection < T > collection, T obj);
+	
+	/** 
+	 * Assigns an object to an attribute of another object
+	 * @param container The object that has the attribute
+	 * @param attribute The name of the attribute to assign
+	 * @param obj The object to assign to the attribute
+	 */
+	public  void assignToAttribute(String container, String attribute, T obj);
+	
+	public  T selectUniqueResult(String ent, String field, String value, String path);
+	
+	public  Collection<T> selectListResult( String field, String value);
+	
+	public  List<T> execute(Query expresion);
+}

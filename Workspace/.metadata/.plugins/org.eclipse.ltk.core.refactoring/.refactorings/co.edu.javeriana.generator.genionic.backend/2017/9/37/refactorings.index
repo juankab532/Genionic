@@ -1,0 +1,14 @@
+1504626051893	Rename package 'co.edu.javeriana.gengular.generator.backend'
+1504626102620	Rename package 'co.edu.javeriana.gengular.generator.backend.templates'
+1504626128384	Rename package 'co.edu.javeriana.gengular.genionic.backend'
+1504626138931	Rename package 'co.edu.javeriana.gengular.generator.backend.generators'
+1504626196941	Delete element
+1504626227955	Rename resource 'GengularBackendGenerator.xtend'
+1504626238648	Rename resource 'GengularEntityGenerator.xtend'
+1504626247239	Rename resource 'GengularServiceImplementationGenerator.xtend'
+1504626268480	Rename resource 'ServiceImplementationGenerator.xtend'
+1504626462520	Rename resource 'GengularServiceInterfaceGenerator.xtend'
+1504626560305	Rename resource 'GengularEntityTemplate.xtend'
+1504626613315	Rename resource 'GengularServiceImplementationTemplate.xtend'
+1504627523685	Rename resource 'GengularServiceInterfaceTemplate.xtend'
+1504630599337	Delete elements

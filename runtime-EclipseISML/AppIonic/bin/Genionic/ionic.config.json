@@ -1,0 +1,15 @@
+{
+  "name": "TecnoDizer",
+  "app_id": "",
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/deezerAPI",
+      "proxyUrl": "http://api.deezer.com"
+    },
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost:80" 
+    }
+  ]
+}

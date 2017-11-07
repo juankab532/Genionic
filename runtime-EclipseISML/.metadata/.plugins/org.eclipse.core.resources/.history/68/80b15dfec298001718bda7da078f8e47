@@ -1,0 +1,5 @@
+package common.services;
+
+public class PersistenceImpl {
+
+}

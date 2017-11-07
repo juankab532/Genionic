@@ -1,0 +1,27 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+ 
+page CrearAsignaturaV(AsignaturaE asignatura) controlledBy CrearAsignaturaC  { 
+	Panel("Crear Asignatura") {
+		Form {
+			Text("Codigo","nuevaAsignatura.codigo", 8, 3);
+			Text("Nombre", "nuevaAsignatura.nombre", 25, 3);
+			Text("Descripcion", "nuevaAsignatura.descripcion", 25, 1);
+			Text("Semestre", "nuevaAsignatura.semestre", 25, 1);
+			
+			RadioChooser("Estado", CrearAsignaturaC.estado,"nuevaAsignatura.estado","") ;   
+			
+			//Text("Estado", "nuevaAsignatura.estado", 25, 1);  
+			
+			Select("Facultad","nuevaAsignatura.facultad.id","lista", "id","nombre","");     
+			 
+			Button("Guardar")->guardar(nuevaAsignatura);	   
+			 
+			Button("Cancelar")->cancelar();     
+			 
+		} 
+	}
+} 

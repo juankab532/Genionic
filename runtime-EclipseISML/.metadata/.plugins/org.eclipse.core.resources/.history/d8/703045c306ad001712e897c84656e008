@@ -1,0 +1,23 @@
+package co.edu.javeriana.views;
+import co.edu.javeriana.entities.* ;
+import  co.edu.javeriana.controllers.* ;
+
+page ViewDietaV(DietaE dieta) controlledBy ViewDietaC { 
+	Panel("Dieta") {
+	
+		Label("Consulta de dieta");
+		Label("");
+		Label("Desayuno");
+		OutputText("Desayuno",dieta.desayuno);
+		Label("Almuerzo");
+		OutputText("Almuerzo",dieta.almuerzo);
+		Label("Cena");
+		OutputText("Cena",dieta.cena);
+		Label("Merienda");
+		OutputText("Merienda",dieta.merienda);
+		Label("Patologia");
+		OutputText("Patologia",dieta.patologia);
+
+		Button("Volver") -> listAll();
+	}
+}

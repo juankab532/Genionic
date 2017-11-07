@@ -1,0 +1,9 @@
+package co.edu.javeriana.views ;
+import  co.edu.javeriana.controllers.* ;
+
+page AdaptarContenido() controlledBy AdaptarContenidoC {
+	Form {
+		Media("http://www.youtube.com/v/KZnUr8lcqjo","420","315");
+		
+	}
+}  

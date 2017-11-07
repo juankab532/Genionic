@@ -1,0 +1,24 @@
+package asignatura.controllers;   
+import entities.*; 
+import co.edu.javeriana.services.*;   
+import asignatura.views.*;  
+ 
+controller CrearAlumnoC {     
+	
+	has Persistence<AlumnoE> persistence; 
+                      
+	has AlumnoE nuevoAlumno;
+
+	guardar(AlumnoE alumno){ 
+		persistence.create(alumno);    
+		show AlumnoV(null);         
+	} 
+	
+	cancelar(){
+		show AlumnoV(null);     
+	}
+	
+	default crear(){
+		show CrearAlumnoV(nuevoAlumno);        
+	}              
+} 

@@ -1,0 +1,6 @@
+package co.edu.javeriana.services;
+
+service MapService {
+	native String getMap(Any selectionObject,String zoom, String type); 
+}
+   

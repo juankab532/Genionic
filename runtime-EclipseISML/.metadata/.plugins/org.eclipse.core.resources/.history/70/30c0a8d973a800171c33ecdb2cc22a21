@@ -1,0 +1,41 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+ 
+page AlumnoV(Array<AlumnoE> lista) controlledBy AlumnoC  { 
+	ExtendedMenu("Gestionar Alumno","person");  
+	Panel("Gestionar Alumno") {
+		  
+		DataTable("Collection<AlumnoE>", null) { 
+			header : { 
+				Label("Foto");
+				Label("Documento");
+				Label("Nombres"); 
+				Label("Apellidos");
+				Label("Dirección");
+				Label("Teléfono");
+				Label("Asignaturas Inscritas");
+	            Label("Editar");
+	            Label("Eliminar"); 
+	        }
+	        body :
+	        	for(AlumnoE alumno in lista) {     
+	            	Image("{{alumno.documento}}");
+	                Label("{{alumno.documento}}");
+					Label("{{alumno.nombres}}");
+					Label("{{alumno.apellidos}}");
+					Label("{{alumno.direccion}}");
+					Label("{{alumno.telefono}}");
+	               	
+	               	Button("Ver Asignaturas")->asignaturas(alumno) ;
+	                Button("Editar")->editar(alumno) ;
+	                Button("Eliminar")->eliminar(alumno);    
+	            } 
+		} 
+		Button("Crear Alumno")->crear(); 
+
+	}
+	
+} 

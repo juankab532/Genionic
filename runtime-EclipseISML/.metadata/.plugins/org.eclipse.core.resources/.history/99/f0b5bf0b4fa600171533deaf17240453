@@ -1,0 +1,14 @@
+package mapa.controllers; 
+
+import mapa.views.*;  
+ 
+controller MapaC {  
+	
+	
+	default ionViewDidLoad(){       
+		lista = persistence.findAll();                                                                
+	}                  
+   
+
+	            
+}   

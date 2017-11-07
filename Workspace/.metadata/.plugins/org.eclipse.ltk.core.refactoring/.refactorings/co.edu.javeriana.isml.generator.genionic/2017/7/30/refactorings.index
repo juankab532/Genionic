@@ -1,0 +1,11 @@
+1500327832626	Delete element
+1500340725320	Rename package 'co.edu.javeriana.isml.generator.simple'
+1500340757797	Rename package 'co.edu.javeriana.isml.generator.simple.generators'
+1500340801168	Rename package 'co.edu.javeriana.isml.generator.simple.templates'
+1500340855748	Rename package 'co.edu.javeriana.isml.generator.genionic'
+1500340868346	Rename package 'co.edu.javeriana.isml.generator.genionic.generators'
+1500340879623	Rename package 'co.edu.javeriana.isml.generator.genionic.templates'
+1500341211828	Delete elements
+1500341381008	Rename resource 'SimpleGeneratorSuite.xtend'
+1500342030360	Rename resource 'EntityGenerator.xtend'
+1500342135776	Rename type 'EntityTemplate'

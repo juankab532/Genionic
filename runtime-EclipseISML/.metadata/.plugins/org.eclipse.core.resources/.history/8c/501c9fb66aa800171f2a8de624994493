@@ -1,0 +1,22 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+ 
+page CrearAlumnoV(AlumnoE alumno) controlledBy CrearAlumnoC  { 
+	Panel("Crear Alumno") {
+		Form {	
+			Cam("Capturar foto","nuevoAlumno.foto","imagen")->getPicture();				
+			Text("Documento", 	"nuevoAlumno.documento", 25, 3);
+			Text("Nombres", 	"nuevoAlumno.nombres", 25, 3);
+			Text("Apellidos", 	"nuevoAlumno.apellidos", 25, 3);
+			Text("Dirección", 	"nuevoAlumno.direccion", 25, 3);
+			Text("Teléfono", 	"nuevoAlumno.telefono", 25, 3);
+			
+			Button("Guardar")->guardar(nuevoAlumno);	    
+			Button("Cancelar")->cancelar();     
+			 
+		} 
+	} 
+}   

@@ -1,0 +1,12 @@
+package co.edu.javeriana.controllers ;
+import co.edu.javeriana.entities.* ;
+import co.edu.javeriana.views.* ;
+import co.edu.javeriana.services.* ;
+
+controller ListaHospitalesC {
+	has MapService mapService ;
+	
+	default ionViewDidLoad(){       
+		mapService.getMap("map",15);                                                                   
+	}  
+}

@@ -1,0 +1,11 @@
+package inscripcion.controllers; 
+
+import inscripcion.views.*; 
+import entities.*; 
+import co.edu.javeriana.services.*;   
+ 
+  
+controller CrearInscripcionC {  
+	
+	   
+}   

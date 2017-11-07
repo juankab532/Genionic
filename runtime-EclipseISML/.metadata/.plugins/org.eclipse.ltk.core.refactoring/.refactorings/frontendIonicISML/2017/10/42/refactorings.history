@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MapService.isml&apos; to &apos;frontendPrenatISML/service/co/co.edu.javeriana.services&apos;&#x0A;- Original project: &apos;frontendIonicISML&apos;&#x0A;- Destination element: &apos;frontendPrenatISML/service/co/co.edu.javeriana.services&apos;&#x0A;- Original element: &apos;MapService.isml&apos;" description="Copy file" destination="=frontendPrenatISML/service\/co&lt;co.edu.javeriana.services" element1="services/services/MapService.isml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1507576643331" units="0" version="1.0"/>
+</session>

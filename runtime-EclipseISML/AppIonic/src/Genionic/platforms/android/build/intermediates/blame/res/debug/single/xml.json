@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/res/merged/debug/xml/config.xml",
+        "source": "/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/res/xml/config.xml"
+    }
+]

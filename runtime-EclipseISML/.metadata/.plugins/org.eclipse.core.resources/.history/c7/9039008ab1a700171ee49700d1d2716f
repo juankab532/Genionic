@@ -1,0 +1,13 @@
+package inscripcion.views; 
+
+import entities.*;   
+import inscripcion.controllers.*;  
+ 
+ 
+page CrearInscripcionV(AlumnoE alumno) controlledBy CrearInscripcionC  { 
+ 
+	Panel("Asinaturas Inscritas") {
+
+	}
+	
+}  

@@ -1,0 +1,27 @@
+package co.edu.javeriana.controllers ;
+import co.edu.javeriana.entities.* ;
+import co.edu.javeriana.views.* ;
+
+controller DietaAdaptativaC {
+	has Persistence<DietaE> persistence;	
+	has List<DietaE> dietaAdaptativaList;
+	has DietaE dieta;
+	
+	
+	default ionViewDidLoad(){
+		Integer cargar=1;  
+		String q = "select a from DietaE a where patologia=3"; 
+		String query="select c from InscripcionE c where alumno_id="+cargar +"";  
+			
+		dietaAdaptativaList = persistence.execute(q);		
+		show DietaAdaptativaV(dietaAdaptativaList); 
+	}
+	
+	viewDieta(DietaE dieta) {
+		show ViewDietaV(dieta); 
+	}
+	
+	cargarDieta(){
+		show ViewDietaV(dieta);
+	}
+}

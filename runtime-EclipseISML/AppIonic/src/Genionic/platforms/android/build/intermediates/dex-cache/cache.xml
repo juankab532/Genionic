@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.2_208b352c66dd7dea67c6ec1a83cee98467461063.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="240e5a7c620376184f3168cfdd36315b97b1fe07">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-11.0.2_05e29c2bac8575457e7c33f8cbd1a0c79c5b374c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_211df23d0e898514d81ec3084120657d443824d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.2_04f04334120fc571aa5ba017c7ba92260fb5a4fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/org.apache.cordova/CordovaLib/6.2.3/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="55d6d64486ec39869ee95431b82058076e7400dd">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-6.2.3-debug_7d0e528f346194effcaf4cda3ed4a1406cf13588.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_47eb8ac30b7cf47e1d9e0d1b900b11f385d1feee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_88f33fdb3d072bab53c046f7b919f49382711080.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_af2fc70b1009445a1faa2f440fb4868881176ffc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.2_be8fe8dbb960aa1a2a577f464a77951ac2e18ac7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_a7a73381db61444786ec65508354f30d1de8b0b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_73ade9bd273b1130cc03241d001ea0136d452215.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_3864996c46a132ff6d727f358ed4f870c1240043.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="db939a450ea2a721db84e774bf108e20c44a8a1d">
+        <dex dex="/home/juan/ProyectoGrado/runtime-EclipseISML/AppIonic/src/Genionic/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-11.0.2_2a03a61315472b09ca5f1c8f066672a7b654828b.jar" />
+    </item>
+
+</items>

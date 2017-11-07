@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source folder &apos;backendGenionicISML/entities&apos; to &apos;backend.entities&apos;&#x0A;- Original project: &apos;backendGenionicISML&apos;&#x0A;- Original element: &apos;backendGenionicISML/entities&apos;&#x0A;- Renamed element: &apos;entities&apos;" description="Rename source folder &apos;entities&apos;" id="org.eclipse.jdt.ui.rename.source.folder" input="/entities" name="backend.entities" stamp="1507347209936" version="1.0"/>
+</session>

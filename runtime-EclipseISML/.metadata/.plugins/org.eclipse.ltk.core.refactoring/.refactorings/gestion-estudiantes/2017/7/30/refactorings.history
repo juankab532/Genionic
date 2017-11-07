@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 7 elements from project &apos;gestion-estudiantes&apos;&#x0A;- Original project: &apos;gestion-estudiantes&apos;&#x0A;- Original elements:&#x0A;     asignaturas&#x0A;     consultar_asignaturas.html&#x0A;     crear_asignatura.html&#x0A;     editar_asignatura.html&#x0A;     estudiantes&#x0A;     facultades&#x0A;     inscripciones" description="Delete elements" element1="src/main/webapp/views/inscripciones" element2="src/main/webapp/views/asignaturas" element3="src/main/webapp/views/facultades" element4="src/main/webapp/views/estudiantes" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="4" stamp="1500387167164" subPackages="false" version="1.0"/>
+</session>

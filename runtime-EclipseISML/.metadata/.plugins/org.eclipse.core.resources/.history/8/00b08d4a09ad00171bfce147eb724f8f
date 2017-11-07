@@ -1,0 +1,20 @@
+package co.edu.javeriana.controllers ;
+import co.edu.javeriana.entities.* ;
+import co.edu.javeriana.views.* ;
+
+controller EditDietaC {
+	has Persistence<DietaE> persistence;
+	has Array<DietaE> lista;
+
+	saveDieta(DietaE dieta) {
+		persistence.save(dieta);
+	}
+	
+	default listAll() {  
+		show DietaV(null); 
+	}
+	
+	cargarDieta(DietaE dieta){
+		show EditDietaV(dieta);
+	}
+} 

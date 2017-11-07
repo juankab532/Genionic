@@ -1,0 +1,27 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import entities.*;   
+ 
+ 
+page InscripcionV(AlumnoE alumno) controlledBy FacultadC  { 
+ 
+	Panel("Asinaturas Inscritas") {
+		  
+		DataTable("Collection<InscripcionE>", null) { 
+			header : { 
+	            Label("Nombre");  
+	            //Label("Editar");
+	            //Label("Eliminar"); 
+	        }
+	        body :
+	        	for(InscripcionE inscripcion in lista) {     
+	               	Label("{{inscripcion.asignatura.nombre}}"); 
+	                //Button("Editar")->editar(facultad) ;
+	                //Button("Eliminar")->eliminar(facultad);    
+	            } 
+		} 
+		//Button("Crear Facultad")->crear(); 
+	}
+	
+}  

@@ -1,0 +1,46 @@
+package inscripcion.controllers; 
+
+import inscripcion.views.*; 
+import entities.*; 
+import co.edu.javeriana.services.*;   
+ 
+ 
+controller InscripcionC {  
+	
+	has Persistence<InscripcionE> persistence;
+	has Persistence<AsignaturaE> persistenceA; 
+	                            
+	has List<InscripcionE> lista;    
+	has Array<AsignaturaE> asignaturas;  
+	
+	has AsignaturaE seleccionada;
+		     
+	has AlumnoE cargar;  
+	
+	has InscripcionE inscripcionS;
+	
+		    
+	default ionViewDidLoad(){      
+		String query="select c from InscripcionE c where alumno_id="+cargar.id;         
+		lista = persistence.execute(query);  
+		asignaturas = persistenceA.findAll();                                                                
+	}   
+	
+	 ionViewWillLoad(){
+	 	seleccionada=new AsignaturaE;
+	 } 
+	 
+	retirar(InscripcionE eliminar){    
+		persistence.remove(eliminar);  
+		show InscripcionV(cargar);                    
+	}              
+    
+     
+    inscribir(AsignaturaE asignaturaG){
+    	inscripcionS.alumno=cargar;
+    	inscripcionS.asignatura=asignaturaG;
+    	
+    	persistence.create(inscripcionS);
+    	show InscripcionV(cargar);     
+    }     
+}   

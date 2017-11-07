@@ -1,0 +1,15 @@
+package asignatura.views; 
+
+import asignatura.controllers.*;
+import asignatura.entities.*;   
+ 
+ 
+page MapaV() controlledBy MapaC  { 
+	ExtendedMenu("Mapa","map");  
+	Panel("Mi Ubicación") {
+		  
+		
+
+	}
+	
+} 

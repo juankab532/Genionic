@@ -1,0 +1,40 @@
+package co.edu.javeriana.views;
+import  co.edu.javeriana.controllers.*;
+import co.edu.javeriana.entities.* ;
+
+page DietaV( Collection<DietaE> dietaList) controlledBy DietaC  {
+
+	ExtendedMenu("Dietas","basket"); 
+	       Panel("Dietas") {
+	       	
+	           DataTable("Collection<Dieta>", null) {
+	               header : {                    
+	                   Label("Desayuno");
+	                   Label("Almuerzo");
+	                   Label("Cena");
+	                   Label("Merienda");
+	                   Label("Patologia");
+	                   Label("View");
+	                   Label("Edit");
+	                   Label("Delete");
+	               }
+	               body : 
+	               for(DietaE dieta in dietaList) {
+	               		Label("{dieta.desayuno}");
+	               		Label("{dieta.almuerzo}");
+	               		Label("{dieta.cena}");
+	               		Label("{dieta.merienda}");
+	               		Label("{dieta.patologia}");
+	                   	Button("View")-> viewDieta(dieta);
+	                   	Button("Edit") -> editDieta(dieta);
+	                   	Button("Delete") -> deleteDieta(dieta);
+	                  
+	          			
+	               }
+				
+	           }
+
+		}
+	
+	
+}

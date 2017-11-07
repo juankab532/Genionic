@@ -1,0 +1,10 @@
+#Sun Oct 01 18:06:51 COT 2017
+l=Installing connector ID
+ct=central
+d=1506899211086
+c=0
+cmp=central
+a=install
+cl=org.jboss.tools.arquillian
+v=1.2.100
+s=0

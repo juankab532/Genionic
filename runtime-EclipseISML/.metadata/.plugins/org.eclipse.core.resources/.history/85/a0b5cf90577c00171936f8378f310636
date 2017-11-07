@@ -1,0 +1,10 @@
+package asignatura.controllers; 
+import asignatura.entities.*;
+
+controller AsignaturaC {  
+	getCamera(){
+		String algo="algo";
+	}
+	default initConsultarAsignaturas() {
+	}
+}

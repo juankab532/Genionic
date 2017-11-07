@@ -1,0 +1,32 @@
+package asignatura.controllers; 
+import entities.*; 
+import co.edu.javeriana.services.*;   
+import asignatura.views.*;  
+import inscripcion.views.*; 
+ 
+controller AlumnoC {  
+	
+	has Persistence<AlumnoE> persistence;                              
+	has Array<AlumnoE> lista;         
+	has Any imagen; 
+		    
+	default ionViewDidLoad(){       
+		lista = persistence.findAll();                                                                
+	}                  
+   
+	editar(AlumnoE editar){   
+		show EditarAlumnoV(editar);           
+	}   
+	eliminar(AlumnoE eliminar){    
+		persistence.remove(eliminar);   
+		show AlumnoV(lista);                    
+	}  
+	crear(){ 
+		AlumnoE nuevoAlumno =new AlumnoE;   
+		show CrearAlumnoV(nuevoAlumno);          
+	}   
+	
+	asignaturas(AlumnoE cargar){     
+		show InscripcionV(cargar);            
+	}             
+}   

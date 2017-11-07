@@ -1,0 +1,26 @@
+package asignatura.controllers; 
+import entities.*; 
+import co.edu.javeriana.services.*;   
+import asignatura.views.*;  
+ 
+controller AsignaturaC {  
+	
+	has Persistence<AsignaturaE> persistence;                               
+	has Array<AsignaturaE> lista;         
+		    
+	default ionViewDidLoad(){       
+		lista = persistence.findAll();                                                                
+	}                  
+      
+	editar(AsignaturaE editar){   
+		show EditarAsignaturaV(editar);           
+	}   
+	eliminar(AsignaturaE eliminar){    
+		persistence.remove(eliminar);  
+		show AsignaturaV(lista);                 
+	}  
+	crear(){ 
+		AsignaturaE nuevaAsignatura =new AsignaturaE;
+		show CrearAsignaturaV(nuevaAsignatura);        
+	}               
+}   

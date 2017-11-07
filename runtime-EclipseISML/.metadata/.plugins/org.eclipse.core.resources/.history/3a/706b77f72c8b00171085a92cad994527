@@ -1,0 +1,20 @@
+package asignatura.controllers; 
+import asignatura.entities.*; 
+import co.edu.javeriana.services.*; 
+import asignatura.views.*; 
+ 
+controller AsignaturaC {
+	
+	has Persistence<AsignaturaE> persistence;           
+	has Array<AsignaturaE> lista;        
+	has String imagen; 	    
+	default ionViewDidLoad(){  
+		lista = persistence.findAll();                                            
+	}          
+	 
+	getPicture(){  
+		CameraService cam;       
+		imagen = cam.takePicture();         
+		show AsignaturaV(lista, imagen);              
+	}              
+} 

@@ -1,0 +1,223 @@
+package services.impl;				
+
+import entities.AsignaturaE;
+	
+import java.util.*;
+import java.io.Serializable;
+import javax.ejb.Stateless;
+ 
+import services.interfaces.AsignaturaService;
+
+
+/**
+ * This class represents an EJB named AsignaturaServiceImpl
+ */
+@Stateless
+public class AsignaturaServiceImpl extends PersistenceImpl<AsignaturaE> implements AsignaturaService,Serializable{
+	
+   @PersistenceContext
+    private EntityManager entityManager;
+	
+	protected  EntityManager getEntityManager() {
+		return entityManager;
+	}
+	
+	
+	
+	
+	/**
+	 * Service default constructor
+	 */
+	public AsignaturaServiceImpl(){
+		super(AsignaturaE.class);
+	}
+	
+	/**
+	 * This method executes the proper actions for remove
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void remove(AsignaturaE obj){
+		super.remove(obj);	
+	}
+	/**
+	 * This method executes the proper actions for remove
+	 * @param id Parameter from type Integer
+	 */
+	@Override
+	public void remove(Long id){
+		super.remove(id);	
+	}
+	/**
+	 * This method executes the proper actions for create
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void create(AsignaturaE obj){
+		super.create(obj);	
+	}
+	/**
+	 * This method executes the proper actions for findAll
+	 * @return Some Array<AsignaturaE> object
+	 */
+	@Override
+	public Array<AsignaturaE> findAll(){
+		return super.findAll();
+	}
+	/**
+	 * This method executes the proper actions for findAllExcept
+	 * @param elementsToExclude Parameter from type Collection
+	 * @return Some Array<AsignaturaE> object
+	 */
+	@Override
+	public Array<AsignaturaE> findAllExcept(List<AsignaturaE> elementsToExclude){
+		return super.findAllExcept(elementsToExclude);
+	}
+	/**
+	 * This method executes the proper actions for isPersistent
+	 * @param obj Parameter from type T
+	 * @return Some Boolean object
+	 */
+	@Override
+	public Boolean isPersistent(AsignaturaE obj){
+		return super.isPersistent(obj);
+	}
+	/**
+	 * This method executes the proper actions for find
+	 * @param id Parameter from type Integer
+	 * @return Some AsignaturaE object
+	 */
+	@Override
+	public AsignaturaE find(Long id){
+		return super.find(id);
+	}
+	/**
+	 * This method executes the proper actions for save
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void save(AsignaturaE obj){
+		super.save(obj);	
+	}
+	/**
+	 * This method executes the proper actions for findRange
+	 * @param rangeSize Parameter from type Integer
+	 * @param from Parameter from type Integer
+	 * @return Some Array<AsignaturaE> object
+	 */
+	@Override
+	public Array<AsignaturaE> findRange(Long rangeSize,Long from){
+		return super.findRange(rangeSize,from);
+	}
+	/**
+	 * This method executes the proper actions for count
+	 * @return Some Long object
+	 */
+	@Override
+	public Long count(){
+		return super.count();
+	}
+	/**
+	 * This method executes the proper actions for addToCollection
+	 * @param container Parameter from type Any
+	 * @param collection Parameter from type Collection
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void addToCollection(Object container,List<AsignaturaE> collection,AsignaturaE obj){
+		super.addToCollection(container,collection,obj);	
+	}					
+	/**
+	 * This method executes the proper actions for addToCollection
+	 * @param container Parameter from type Any
+	 * @param collection Parameter from type Collection
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void addToCollectionREST(String container,String collection,String obj) throws Exception {
+		Object containerVar=Object.parseObject(container);
+		List<AsignaturaE> collectionVar=(List<AsignaturaE>)JSONConverterUtil.convertFromJSONArray(AsignaturaE.class,collection);
+		AsignaturaE objVar=JSONConverterUtil.convertFromJSONObject(AsignaturaE.class,obj);
+		this.addToCollection(containerVar,collectionVar,objVar);
+	}
+	/**
+	 * This method executes the proper actions for removeFromCollection
+	 * @param container Parameter from type Any
+	 * @param collection Parameter from type Collection
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void removeFromCollection(Object container,List<AsignaturaE> collection,AsignaturaE obj){
+		super.removeFromCollection(container,collection,obj);	
+	}					
+	/**
+	 * This method executes the proper actions for removeFromCollection
+	 * @param container Parameter from type Any
+	 * @param collection Parameter from type Collection
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void removeFromCollectionREST(String container,String collection,String obj) throws Exception {
+		Object containerVar=Object.parseObject(container);
+		List<AsignaturaE> collectionVar=(List<AsignaturaE>)JSONConverterUtil.convertFromJSONArray(AsignaturaE.class,collection);
+		AsignaturaE objVar=JSONConverterUtil.convertFromJSONObject(AsignaturaE.class,obj);
+		this.removeFromCollection(containerVar,collectionVar,objVar);
+	}
+	/**
+	 * This method executes the proper actions for assignToAttribute
+	 * @param container Parameter from type Any
+	 * @param attribute Parameter from type String
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void assignToAttribute(Object container,String attribute,AsignaturaE obj){
+		super.assignToAttribute(container,attribute,obj);	
+	}					
+	/**
+	 * This method executes the proper actions for assignToAttribute
+	 * @param container Parameter from type Any
+	 * @param attribute Parameter from type String
+	 * @param obj Parameter from type T
+	 */
+	@Override
+	public void assignToAttributeREST(String container,String attribute,String obj) throws Exception {
+		Object containerVar=Object.parseObject(container);
+		String attributeVar=attribute;
+		AsignaturaE objVar=JSONConverterUtil.convertFromJSONObject(AsignaturaE.class,obj);
+		this.assignToAttribute(containerVar,attributeVar,objVar);
+	}
+	/**
+	 * This method executes the proper actions for selectUniqueResult
+	 * @param ent Parameter from type Any
+	 * @param field Parameter from type Any
+	 * @param value Parameter from type String
+	 * @param path Parameter from type Any
+	 * @return Some AsignaturaE object
+	 */
+	@Override
+	public AsignaturaE selectUniqueResult(Object ent,Object field,String value,Object path){
+		return super.selectUniqueResult(ent,field,value,path);
+	}
+	/**
+	 * This method executes the proper actions for selectListResult
+	 * @param field Parameter from type String
+	 * @param value Parameter from type String
+	 * @return Some List<AsignaturaE> object
+	 */
+	@Override
+	public List<AsignaturaE> selectListResult(String field,String value){
+		return super.selectListResult(field,value);
+	}
+	/**
+	 * This method executes the proper actions for execute
+	 * @param expresion Parameter from type Query
+	 * @return Some List<AsignaturaE> object
+	 */
+	@Override
+	public List<AsignaturaE> execute(Query expresion){
+		return super.execute(expresion);
+	}
+	
+}	
+
+	

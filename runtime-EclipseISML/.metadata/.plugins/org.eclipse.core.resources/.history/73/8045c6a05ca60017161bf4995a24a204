@@ -1,0 +1,13 @@
+package mapa.controllers; 
+
+import co.edu.javeriana.services.*;  
+ 
+ 
+controller MapaC {  
+	
+	has MapService map ;
+	
+	default ionViewDidLoad(){       
+		map.getMap("map",15);                                                                 
+	}                              
+}    

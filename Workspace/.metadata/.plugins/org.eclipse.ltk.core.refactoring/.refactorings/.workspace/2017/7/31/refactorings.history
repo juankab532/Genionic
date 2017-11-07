@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;co.edu.javeriana.anchurus.generator.laravel&apos;" deleteContents="false" description="Delete resource &apos;co.edu.javeriana.anchurus.generator.laravel&apos;" element1="/co.edu.javeriana.anchurus.generator.laravel" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1500996783415"/>
+</session>

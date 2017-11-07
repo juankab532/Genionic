@@ -1,0 +1,55 @@
+package common.widgets ;
+import common.primitives.* ;
+
+// Simple primitives
+widget Button(String title) ;
+widget Label(Any text) ;
+widget Image(String imageURL) ;
+widget Link(String label, String url) ;
+
+// Form primitives
+widget Form {
+	// Note the new syntax to represent blocks. 
+	// Now you write the required blocks directly, 
+	// rather than declaring them as a parameter of type Block
+ 
+}
+widget Text(String label, Any value, Integer columns, Integer rows) ;
+widget OutputText(String label, Any value) ;
+widget Password(String label, Any value, Integer length) ;
+widget CheckBox(String label, Boolean value) ;
+widget ListChooser(String label, Array < Any > list, Array < Any > value, Any defaultValue) ;
+widget ComboChooser(String label, Array < Any > list, Any value, Any defaultValue) ;
+widget RadioChooser(String label, Array < Any > list, Any value, Any defaultValue) ;
+widget Spinner(String label, Float value, Float stepFactor, Float min, Float max, String prefix) ;
+widget PickList(String title, Any value) ;
+widget Calendar(String label, Date value, Array < Date > markedDates, String dateFormat, Boolean navigator, String mode) ;
+widget GMap(String center, String zoom, String type, Any selectionObject);
+widget Media(String value, String width, String height);
+widget Menu(Any text) ;
+widget ExtendedMenu(String title,String icon);
+
+
+
+// Composite primitives
+widget Panel(String title) {
+}
+widget PanelGrid(String colums) {
+}
+
+widget PanelButton(String title) {
+}
+widget DataTable(String title, Any selectionObject) {
+	// Note the new syntax to represent blocks. 
+	// Now you write the required blocks directly, 
+	// rather than declaring them as a parameter of type Block
+	header : {
+	}
+	body : {
+	}
+}
+
+
+widget Cam(String label,String name,String imageName);
+widget Select(String label,String name, Any list, Any id,Any value, Any defaultId) ;
+widget MobileMap(String selectionObject);

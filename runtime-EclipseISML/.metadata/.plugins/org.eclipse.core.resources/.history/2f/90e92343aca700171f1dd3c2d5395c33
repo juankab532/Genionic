@@ -1,0 +1,6 @@
+package entities;
+
+entity FacultadE {  
+	Long   id;
+	String nombre;
+}         

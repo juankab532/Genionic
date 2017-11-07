@@ -1,0 +1,31 @@
+package asignatura.controllers;   
+import entities.*; 
+import co.edu.javeriana.services.*;   
+import asignatura.views.*;  
+ 
+controller CrearAlumnoC {     
+	
+	has Persistence<AlumnoE> persistence; 
+                      
+	has AlumnoE nuevoAlumno;
+	
+	has Any imagen; 
+
+	guardar(AlumnoE alumno){ 
+		persistence.create(alumno);    
+		show AlumnoV(null);         
+	} 
+	
+	cancelar(){
+		show AlumnoV(null);     
+	}
+	
+	default crear(){
+		show CrearAlumnoV(nuevoAlumno);        
+	} 
+	
+	getPicture(){ 
+		CameraService cam;           
+		nuevoAlumno.foto = cam.takePicture();                                                                    
+	}            
+}  

@@ -1,0 +1,16 @@
+package mapa.controllers; 
+
+import co.edu.javeriana.services.*;  
+ 
+ 
+controller MapaC {  
+	
+	map MapService;
+	
+	default ionViewDidLoad(){       
+		lista = persistence.findAll();                                                                
+	}                  
+   
+
+	            
+}   

@@ -1,0 +1,41 @@
+package co.edu.javeriana.views;
+import co.edu.javeriana.entities.* ;
+import co.edu.javeriana.controllers.* ;
+
+page DietaAdaptativaV( Collection<DietaE> dietaAdaptativaList) controlledBy DietaAdaptativaC  {
+
+		ExtendedMenu("Dieta Adaptativa","pin"); 
+	       Panel("Dieta Adaptativa") {
+	       	
+	           DataTable("Collection<DietaE>", null) {
+	               header : {                    
+	                   Label("Desayuno");
+	                   Label("Almuerzo");
+	                   Label("Cena");
+	                   Label("Merienda");
+	                   Label("Patologia");
+	                   Label("Imagen");
+	                   Label("View");
+
+	               }
+	               body : 
+	               for(DietaE dietaAdaptativa in dietaAdaptativaList) {
+	               		Label("{{dietaAdaptativa.breakfast}}");
+	               		Label("{{dietaAdaptativa.lunch}}");
+	               		Label("{{dietaAdaptativa.dinner}}");
+	               		Label("{{dietaAdaptativa.snack}}");
+	               		Label("{{dietaAdaptativa.patologia}}");
+	               		Media("http://13gseh38q24i3jsdpm3z32cg156s.wpengine.netdna-cdn.com/wp-content/uploads/2015/09/dieta-vegetariana.jpg",
+	               		"200","100");
+	                   	Button("View")-> viewDieta(dietaAdaptativa);
+	                  
+	          			
+	               }
+				
+	           }
+	        	 
+	
+		}
+	
+	
+}

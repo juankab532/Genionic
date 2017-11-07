@@ -1,0 +1,15 @@
+package co.edu.javeriana.entities;
+
+entity DietaE {
+
+    String desayuno;
+    String almuerzo;
+    String cena;
+    String merienda;
+    Integer patologia;
+	String breakfast;
+    String lunch;
+    String dinner;
+    String snack;
+    String media;
+} 
